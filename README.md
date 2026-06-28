@@ -9,6 +9,7 @@
 - [Git Hosting Platforms](#git-hosting-platforms)
 - [Operating Systems & Kernels](#operating-systems--kernels)
 - [Core System & Toolchains](#core-system--toolchains)
+- [Core Frameworks & Libraries](#core-frameworks--libraries)
 - [Programming Languages](#programming-languages)
 - [Desktop Environments & Display Servers](#desktop-environments--display-servers)
 - [Web & Networking](#web--networking)
@@ -62,6 +63,10 @@
 *   [**OpenWrt**](https://git.openwrt.org/openwrt/openwrt.git) — A Linux operating system targeting embedded devices.
 *   [**9front**](https://git.9front.org/plan9front/plan9front) — A fork of the Plan 9 operating system.
 *   [**Trisquel**](https://gitlab.trisquel.org/trisquel/package-helpers) — A fully free operating system endorsed by the Free Software Foundation.
+*   [**GNU Hurd**](https://git.savannah.gnu.org/cgit/hurd/hurd.git) — The GNU project's replacement for the Unix kernel.
+*   [**MINIX 3**](https://git.minix3.org/minix.git) — A free, highly reliable microkernel OS created by Andrew S. Tanenbaum.
+*   [**postmarketOS**](https://gitlab.com/postmarketOS/pmaports) — A Linux distribution for phones and other mobile devices.
+*   [**Ubuntu Touch**](https://gitlab.com/ubports/development/core/ubuntu-touch) — A mobile version of the Ubuntu operating system.
 
 ## Core System & Toolchains
 
@@ -80,6 +85,19 @@
 *   [**Libreboot**](https://cgit.libreboot.org/libreboot.git) — Free system boot replacement (coreboot distribution).
 *   [**s6**](https://git.skarnet.org/cgits/s6) — A small suite of programs for UNIX, designed to allow process supervision.
 *   [**Zsh**](https://git.code.sf.net/p/zsh/code) — A shell designed for interactive use, although it is also a powerful scripting language.
+*   [**GRUB**](https://git.savannah.gnu.org/cgit/grub.git) — The GRand Unified Bootloader, default for most Linux distributions.
+*   [**Coreboot**](https://review.coreboot.org/coreboot.git) — An extended firmware platform aiming to replace proprietary BIOS/UEFI.
+*   [**Woodpecker CI**](https://codeberg.org/woodpecker-ci/woodpecker) — A simple, extensible continuous integration engine.
+*   [**Cygwin & Newlib**](https://sourceware.org/git/newlib-cygwin.git) — A large collection of GNU and Open Source tools providing functionality similar to a Linux distribution on Windows.
+*   [**Valgrind**](https://sourceware.org/git/valgrind.git) — An instrumentation framework for building dynamic analysis tools (memory debugging, profiling).
+
+## Core Frameworks & Libraries
+
+*   [**Qt**](https://code.qt.io/cgit/qt/qtbase.git) — The legendary cross-platform application framework and widget toolkit.
+*   [**Cairo**](https://gitlab.freedesktop.org/cairo/cairo) — A 2D graphics library with support for multiple output devices.
+*   [**FreeType**](https://gitlab.freedesktop.org/freetype/freetype) — A freely available software library to render fonts.
+*   [**EFL (Enlightenment Foundation Libraries)**](https://git.enlightenment.org/enlightenment/efl) — A collection of libraries handling drawing, event loops, and UI widgets.
+*   [**CMake**](https://gitlab.kitware.com/cmake/cmake) — The de facto standard build system generator for C and C++.
 
 ## Programming Languages
 
@@ -89,6 +107,9 @@
 *   [**V8**](https://chromium.googlesource.com/v8/v8) — Google's open source high-performance JavaScript and WebAssembly engine.
 *   [**Free Pascal**](https://gitlab.com/freepascal.org/fpc/source) — A 32, 64, and 16-bit professional Pascal compiler.
 *   [**Hare**](https://git.sr.ht/~sircmpwn/hare) — A systems programming language designed to be simple, stable, and robust.
+*   [**Vala**](https://gitlab.gnome.org/GNOME/vala) — An object-oriented language that compiles to C and is deeply integrated with GObject.
+*   [**GNU Guile**](https://git.savannah.gnu.org/cgit/guile.git) — The preferred extension language for the GNU system (Scheme implementation).
+*   [**Tcl/Tk**](https://core.tcl-lang.org/tcl) — A powerful dynamic programming language and GUI toolkit (hosted via Fossil).
 
 ## Desktop Environments & Display Servers
 
@@ -98,6 +119,7 @@
 *   [**GNOME (GTK)**](https://gitlab.gnome.org/GNOME/gtk) — The GTK toolkit and core GNOME libraries.
 *   [**KDE Plasma**](https://invent.kde.org/plasma/plasma-workspace) — The KDE Plasma desktop environment.
 *   [**Sway (wlroots)**](https://gitlab.freedesktop.org/wlroots/wlroots) — Modular Wayland compositor library used by Sway.
+*   [**River**](https://codeberg.org/river/river) — A dynamic tiling Wayland compositor.
 *   [**Xfce**](https://gitlab.xfce.org/xfce) — A lightweight desktop environment for UNIX-like operating systems.
 *   [**dwm**](https://git.suckless.org/dwm/) — A dynamic window manager for X.
 *   [**st**](https://git.suckless.org/st/) — A simple terminal implementation for X.
@@ -114,12 +136,20 @@
 *   [**HAProxy**](https://git.haproxy.org/?p=haproxy.git) — Reliable, high performance TCP/HTTP load balancer.
 *   [**MediaWiki**](https://gerrit.wikimedia.org/r/mediawiki/core) — The free software wiki engine used by Wikipedia.
 *   [**Drupal**](https://git.drupalcode.org/project/drupal) — Open source content management system.
+*   [**PeerTube**](https://framagit.org/framasoft/peertube/PeerTube) — A free, decentralized and federated video platform.
+*   [**Mobilizon**](https://framagit.org/framasoft/mobilizon) — A federated tool to find, create and organize events.
 *   [**Pleroma**](https://git.pleroma.social/pleroma/pleroma) — A lightweight fediverse server.
 *   [**cgit**](https://git.zx2c4.com/cgit/) — A hyperfast web frontend for git repositories written in C.
 *   [**NetSurf**](https://git.netsurf-browser.org/netsurf.git) — A small, fast web browser.
 *   [**Ikiwiki**](https://git.ikiwiki.info/) — A wiki compiler.
 *   [**GNU IceCat**](https://git.savannah.gnu.org/cgit/gnuzilla.git) — The GNU version of the Firefox browser, with emphasis on privacy and free software.
 *   [**Lighttpd**](https://git.lighttpd.net/lighttpd/lighttpd.git) — A secure, fast, compliant, and very flexible web-server.
+*   [**BIND 9**](https://gitlab.isc.org/isc-projects/bind9) — The most widely used Domain Name System (DNS) software on the Internet.
+*   [**Exim**](https://git.exim.org/exim.git) — A widely used message transfer agent (MTA) developed at the University of Cambridge.
+*   [**Jami**](https://git.jami.net/savoirfairelinux/jami-client-qt) — A free and universal communication platform preserving user privacy (GNU project).
+*   [**Gajim**](https://gitlab.com/gajim/gajim) — A fully-featured XMPP client written in Python and GTK.
+*   [**GnuTLS**](https://gitlab.com/gnutls/gnutls) — A secure communications library implementing the SSL, TLS and DTLS protocols.
+*   [**GNU Wget**](https://git.savannah.gnu.org/cgit/wget.git) — The classic, non-interactive network downloader.
 
 ## Applications & Multimedia
 
@@ -134,8 +164,10 @@
 *   [**FFmpeg**](https://git.ffmpeg.org/ffmpeg.git) — Complete, cross-platform solution to record, convert and stream audio and video.
 *   [**GStreamer**](https://gitlab.freedesktop.org/gstreamer/gstreamer) — A powerful, versatile, and extensible multimedia framework.
 *   [**PipeWire**](https://gitlab.freedesktop.org/pipewire/pipewire) — Server and user space API to deal with multimedia pipelines.
+*   [**PulseAudio**](https://gitlab.freedesktop.org/pulseaudio/pulseaudio) — A featureful, general-purpose sound server for POSIX OSes.
 *   [**Ardour**](https://git.ardour.org/ardour/ardour.git) — The digital audio workstation.
 *   [**Pass**](https://git.zx2c4.com/password-store/) — The standard unix password manager.
+*   [**F-Droid**](https://gitlab.com/fdroid/fdroidclient) — The free and open source Android app repository client.
 *   [**aerc**](https://git.sr.ht/~rjarry/aerc) — A highly efficient email client for your terminal.
 *   [**catgirl**](https://git.causal.agency/catgirl) — A TLS-only terminal IRC client.
 *   [**GNU Screen**](https://git.savannah.gnu.org/cgit/screen.git) — A full-screen window manager that multiplexes a physical terminal.
@@ -152,11 +184,14 @@
 
 *   [**Veloren**](https://gitlab.com/veloren/veloren) — A multiplayer voxel RPG written in Rust.
 *   [**Xonotic**](https://gitlab.com/xonotic/xonotic) — An addictive arena shooter with crisp movement and a wide array of weapons.
+*   [**0 A.D.**](https://gitea.wildfiregames.com/0ad/0ad) — A free, open-source, historical Real Time Strategy (RTS) game and engine.
+*   [**OpenMW**](https://gitlab.com/OpenMW/openmw) — An open-source game engine reimplementation of The Elder Scrolls III: Morrowind.
 
 ## Emulation & Virtualization
 
 *   [**QEMU**](https://gitlab.com/qemu-project/qemu) — A generic and open source machine emulator and virtualizer.
 *   [**Wine**](https://gitlab.winehq.org/wine/wine) — A compatibility layer capable of running Windows applications on Linux and other POSIX-compliant operating systems.
+*   [**Xen Project**](https://xenbits.xen.org/git-http/xen.git) — The legendary baremetal hypervisor.
 
 ## Ecosystems & Companion Tools
 
@@ -295,6 +330,77 @@ A fully-featured KDE experience built mostly from KDE's own GitLab instance.
 *   **Video Editor**: [Kdenlive](https://invent.kde.org/multimedia/kdenlive)
 *   **Graphics**: [Krita](https://invent.kde.org/graphics/krita)
 *   **Browser**: [Chromium](https://chromium.googlesource.com/chromium/src)
+
+### 9. The Mobile / Post-Convergence User
+A stack centered around running a true Linux stack on mobile hardware.
+*   **OS Base**: [postmarketOS](https://gitlab.com/postmarketOS/pmaports) or [Ubuntu Touch](https://gitlab.com/ubports/development/core/ubuntu-touch)
+*   **Compositor**: [Sway](https://gitlab.freedesktop.org/wlroots/wlroots) (highly adaptable to mobile)
+*   **Browser**: [Epiphany (GNOME Web)](https://gitlab.gnome.org/GNOME/epiphany)
+*   **Communications**: [Jami](https://git.jami.net/savoirfairelinux/jami-client-qt) + [Gajim](https://gitlab.com/gajim/gajim)
+*   **Mail**: [aerc](https://git.sr.ht/~rjarry/aerc)
+*   **Network**: [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) + [WireGuard](https://git.zx2c4.com/wireguard-linux)
+
+### 10. The Legacy UNIX Purist
+A purist approach prioritizing code correctness and portability over modern fluff.
+*   **OS Base**: [NetBSD](https://anonhg.netbsd.org/)
+*   **Window Manager**: [dwm](https://git.suckless.org/dwm/)
+*   **Terminal**: [st](https://git.suckless.org/st/)
+*   **Browser**: [NetSurf](https://git.netsurf-browser.org/netsurf.git)
+*   **Mail Stack**: [Mutt](https://gitlab.com/muttmua/mutt)
+*   **Text Editor**: [GNU Nano](https://git.savannah.gnu.org/cgit/nano.git) or `vi`
+*   **Compiler**: [GCC](https://gcc.gnu.org/git/gcc.git)
+
+### 11. The Hardware Engineer / Maker
+A workstation designed for electronics design and embedded systems development.
+*   **OS Base**: [Gentoo](https://gitweb.gentoo.org/repo/gentoo.git/)
+*   **Desktop Environment**: [Xfce](https://gitlab.xfce.org/xfce)
+*   **Hardware Design**: [KiCad](https://gitlab.com/kicad/code/kicad)
+*   **Embedded Build System**: [Buildroot](https://git.buildroot.net/buildroot) or [Yocto (Poky)](https://git.yoctoproject.org/poky)
+*   **System Tools**: [util-linux](https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git) (fdisk, mount)
+*   **Terminal**: [st](https://git.suckless.org/st/) + [GNU Screen](https://git.savannah.gnu.org/cgit/screen.git)
+
+### 12. The Plan 9 / 9front Enthusiast
+A complete departure from UNIX, using the Plan 9 fork ecosystem.
+*   **OS Base**: [9front](https://git.9front.org/plan9front/plan9front)
+*   **Window Manager**: `rio` (built into 9front)
+*   **Editor**: `sam` / `acme` (built into 9front)
+*   **Compiler**: Plan 9 C compiler (built into 9front)
+*   **Mail**: `upas` (built into 9front)
+*(Note: 9front provides a completely self-contained userland and graphical environment out-of-the-box).*
+
+### 13. The Graphical Wayland Power User
+For those who want dynamic tiling but with a bit more modernity and flexibility than Sway.
+*   **OS Base**: Arch Linux (using [pacman](https://gitlab.archlinux.org/pacman/pacman))
+*   **Compositor**: [River](https://codeberg.org/river/river)
+*   **Launcher**: [dmenu](https://git.suckless.org/dmenu/) (via Xwayland or Wayland ports)
+*   **Terminal**: [st](https://git.suckless.org/st/)
+*   **Browser**: [Chromium](https://chromium.googlesource.com/chromium/src)
+*   **Audio Pipeline**: [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) + [WirePlumber](https://gitlab.freedesktop.org/pipewire/wireplumber)
+
+### 14. The Secure OSINT Node
+Focused completely on anonymity, secure communications, and privacy.
+*   **OS Base**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports)
+*   **Window Manager**: [Sway](https://gitlab.freedesktop.org/wlroots/wlroots)
+*   **Networking**: [Tor](https://gitlab.torproject.org/tpo/core/tor) + [WireGuard](https://git.zx2c4.com/wireguard-linux)
+*   **Communications**: [Jami](https://git.jami.net/savoirfairelinux/jami-client-qt) + [Gajim](https://gitlab.com/gajim/gajim) + [catgirl](https://git.causal.agency/catgirl)
+*   **Browser**: [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser)
+
+### 15. The Pure GNOME Evangelist
+Using nothing but official GNOME stack projects hosted directly on GNOME's GitLab.
+*   **OS Base**: [Trisquel](https://gitlab.trisquel.org/trisquel/package-helpers)
+*   **Desktop Environment**: [GNOME (GTK)](https://gitlab.gnome.org/GNOME/gtk)
+*   **File Manager**: [Nautilus](https://gitlab.gnome.org/GNOME/nautilus)
+*   **Browser**: [Epiphany (GNOME Web)](https://gitlab.gnome.org/GNOME/epiphany)
+*   **Document Viewer**: [Evince](https://gitlab.gnome.org/GNOME/evince)
+*   **Multimedia**: [GStreamer](https://gitlab.freedesktop.org/gstreamer/gstreamer)
+
+### 16. The Lightweight Haiku Desktop
+A complete desktop experience that avoids Linux and BSD entirely, focused on personal computing.
+*   **OS Base**: [Haiku](https://cgit.haiku-os.org/haiku/)
+*   **File Manager**: Tracker (built-in)
+*   **Web Browser**: WebPositive (built-in)
+*   **Terminal**: Haiku Terminal (built-in)
+*   **Media**: [VLC Media Player](https://code.videolan.org/videolan/vlc) (ported to Haiku)
 
 ---
 
