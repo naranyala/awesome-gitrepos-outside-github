@@ -60,7 +60,6 @@
 *   [**Buildroot**](https://git.buildroot.net/buildroot) — A simple, efficient and easy-to-use tool to generate embedded Linux systems.
 *   [**OpenWrt**](https://git.openwrt.org/openwrt/openwrt.git) — A Linux operating system targeting embedded devices.
 *   [**9front**](https://git.9front.org/plan9front/plan9front) — A fork of the Plan 9 operating system.
-*   [**KISS Linux**](https://codeberg.org/kisslinux/repo) — A bare-bones Linux distribution with a focus on simplicity.
 *   [**Trisquel**](https://gitlab.trisquel.org/trisquel/package-helpers) — A fully free operating system endorsed by the Free Software Foundation.
 
 ## Core System & Toolchains
@@ -182,7 +181,7 @@ A modern, keyboard-driven Wayland setup utilizing indie tools hosted primarily o
 
 ### 3. The Lightweight Traditional Desktop
 A more traditional, mouse-friendly setup that avoids heavy corporate telemetry and bloat.
-*   **OS Base**: [KISS Linux](https://codeberg.org/kisslinux/repo) or [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports)
+*   **OS Base**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports)
 *   **Desktop Environment**: [Xfce](https://gitlab.xfce.org/xfce)
 *   **Media**: [VLC](https://code.videolan.org/videolan/vlc) or [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) for audio routing
 *   **Privacy Browser**: [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser)
