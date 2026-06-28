@@ -16,6 +16,7 @@
 - [Databases](#databases)
 - [Games](#games)
 - [Emulation & Virtualization](#emulation--virtualization)
+- [Niche Linux Dotfiles Stacks](#niche-linux-dotfiles-stacks)
 
 ---
 
@@ -60,6 +61,7 @@
 *   [**OpenWrt**](https://git.openwrt.org/openwrt/openwrt.git) — A Linux operating system targeting embedded devices.
 *   [**9front**](https://git.9front.org/plan9front/plan9front) — A fork of the Plan 9 operating system.
 *   [**KISS Linux**](https://codeberg.org/kisslinux/repo) — A bare-bones Linux distribution with a focus on simplicity.
+*   [**Trisquel**](https://gitlab.trisquel.org/trisquel/package-helpers) — A fully free operating system endorsed by the Free Software Foundation.
 
 ## Core System & Toolchains
 
@@ -75,6 +77,9 @@
 *   [**GNU Binutils & GDB**](https://sourceware.org/git/binutils-gdb.git) — The GNU Binary Utilities and the GNU Project Debugger.
 *   [**GNU Guix**](https://git.savannah.gnu.org/cgit/guix.git) — Transactional package manager and advanced distribution of the GNU system.
 *   [**pacman**](https://gitlab.archlinux.org/pacman/pacman) — A library-based package manager with dependency support used by Arch Linux.
+*   [**Libreboot**](https://cgit.libreboot.org/libreboot.git) — Free system boot replacement (coreboot distribution).
+*   [**s6**](https://git.skarnet.org/cgits/s6) — A small suite of programs for UNIX, designed to allow process supervision.
+*   [**Zsh**](https://git.code.sf.net/p/zsh/code) — A shell designed for interactive use, although it is also a powerful scripting language.
 
 ## Programming Languages
 
@@ -96,6 +101,7 @@
 *   [**Xfce**](https://gitlab.xfce.org/xfce) — A lightweight desktop environment for UNIX-like operating systems.
 *   [**dwm**](https://git.suckless.org/dwm/) — A dynamic window manager for X.
 *   [**st**](https://git.suckless.org/st/) — A simple terminal implementation for X.
+*   [**Enlightenment**](https://git.enlightenment.org/enlightenment/enlightenment) — A window manager and desktop environment known for its eye-candy and performance.
 
 ## Web & Networking
 
@@ -112,6 +118,8 @@
 *   [**cgit**](https://git.zx2c4.com/cgit/) — A hyperfast web frontend for git repositories written in C.
 *   [**NetSurf**](https://git.netsurf-browser.org/netsurf.git) — A small, fast web browser.
 *   [**Ikiwiki**](https://git.ikiwiki.info/) — A wiki compiler.
+*   [**GNU IceCat**](https://git.savannah.gnu.org/cgit/gnuzilla.git) — The GNU version of the Firefox browser, with emphasis on privacy and free software.
+*   [**Lighttpd**](https://git.lighttpd.net/lighttpd/lighttpd.git) — A secure, fast, compliant, and very flexible web-server.
 
 ## Applications & Multimedia
 
@@ -130,6 +138,10 @@
 *   [**Pass**](https://git.zx2c4.com/password-store/) — The standard unix password manager.
 *   [**aerc**](https://git.sr.ht/~rjarry/aerc) — A highly efficient email client for your terminal.
 *   [**catgirl**](https://git.causal.agency/catgirl) — A TLS-only terminal IRC client.
+*   [**GNU Screen**](https://git.savannah.gnu.org/cgit/screen.git) — A full-screen window manager that multiplexes a physical terminal.
+*   [**GNU Nano**](https://git.savannah.gnu.org/cgit/nano.git) — A small and friendly text editor.
+*   [**Mutt**](https://gitlab.com/muttmua/mutt) — A small but very powerful text-based mail client.
+*   [**Kdenlive**](https://invent.kde.org/multimedia/kdenlive) — An open source video editor based on the MLT Framework and KDE Frameworks.
 
 ## Databases
 
@@ -145,6 +157,61 @@
 
 *   [**QEMU**](https://gitlab.com/qemu-project/qemu) — A generic and open source machine emulator and virtualizer.
 *   [**Wine**](https://gitlab.winehq.org/wine/wine) — A compatibility layer capable of running Windows applications on Linux and other POSIX-compliant operating systems.
+
+---
+
+## Niche Linux Dotfiles Stacks
+
+If you want to build a highly customized, niche Linux dotfiles setup using *only* software whose primary development happens outside of GitHub, here are a few theoretical stacks you can build from this list:
+
+### 1. The "Suckless" X11 Minimalist
+A setup focusing on absolute minimalism, compiling from source, and using C-based configuration.
+*   **Window Manager**: [dwm](https://git.suckless.org/dwm/)
+*   **Terminal**: [st](https://git.suckless.org/st/)
+*   **Shell**: [GNU Bash](https://git.savannah.gnu.org/cgit/bash.git)
+*   **Editor**: [GNU Emacs](https://git.savannah.gnu.org/cgit/emacs.git) (or just `vi` from [BusyBox](https://git.busybox.net/busybox/))
+*   **Passwords**: [Pass](https://git.zx2c4.com/password-store/)
+
+### 2. The Modern Wayland Indie Hacker
+A modern, keyboard-driven Wayland setup utilizing indie tools hosted primarily on SourceHut and self-hosted instances.
+*   **Compositor**: [Sway](https://gitlab.freedesktop.org/wlroots/wlroots)
+*   **Email Client**: [aerc](https://git.sr.ht/~rjarry/aerc)
+*   **IRC Client**: [catgirl](https://git.causal.agency/catgirl)
+*   **Browser**: [NetSurf](https://git.netsurf-browser.org/netsurf.git) (for extreme lightweight browsing)
+*   **Package Manager**: [GNU Guix](https://git.savannah.gnu.org/cgit/guix.git)
+
+### 3. The Lightweight Traditional Desktop
+A more traditional, mouse-friendly setup that avoids heavy corporate telemetry and bloat.
+*   **OS Base**: [KISS Linux](https://codeberg.org/kisslinux/repo) or [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports)
+*   **Desktop Environment**: [Xfce](https://gitlab.xfce.org/xfce)
+*   **Media**: [VLC](https://code.videolan.org/videolan/vlc) or [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) for audio routing
+*   **Privacy Browser**: [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser)
+
+### 4. The Free Software Absolutist
+A Libre-only stack endorsed by the Free Software Foundation. No proprietary blobs, telemetry, or non-free JS allowed.
+*   **Firmware**: [Libreboot](https://cgit.libreboot.org/libreboot.git)
+*   **Operating System**: [Trisquel](https://gitlab.trisquel.org/trisquel/package-helpers)
+*   **Desktop Environment**: [GNOME (GTK)](https://gitlab.gnome.org/GNOME/gtk)
+*   **Web Browser**: [GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git)
+*   **Text Editor**: [GNU Nano](https://git.savannah.gnu.org/cgit/nano.git)
+
+### 5. The Hardened Server / Privacy Node
+A completely self-hosted, supervised environment built for resilience and security without systemd.
+*   **Base OS**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports) or [OpenBSD](https://cgit.openbsd.org/src/)
+*   **Process Supervision**: [s6](https://git.skarnet.org/cgits/s6)
+*   **Web Server**: [Lighttpd](https://git.lighttpd.net/lighttpd/lighttpd.git)
+*   **VPN**: [WireGuard](https://git.zx2c4.com/wireguard-linux)
+*   **Shell**: [Zsh](https://git.code.sf.net/p/zsh/code)
+*   **Terminal Multiplexer**: [GNU Screen](https://git.savannah.gnu.org/cgit/screen.git)
+
+### 6. The Open-Source Creative Studio
+A dotfiles setup tailored to digital artists, musicians, and video editors who rely on independent community infrastructure.
+*   **Desktop Environment**: [Enlightenment](https://git.enlightenment.org/enlightenment/enlightenment) or [KDE Plasma](https://invent.kde.org/plasma/plasma-workspace)
+*   **Audio Pipeline**: [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire)
+*   **Digital Audio Workstation**: [Ardour](https://git.ardour.org/ardour/ardour.git)
+*   **Video Editing**: [Kdenlive](https://invent.kde.org/multimedia/kdenlive)
+*   **Graphics & Painting**: [Krita](https://invent.kde.org/graphics/krita) and [GIMP](https://gitlab.gnome.org/GNOME/gimp)
+*   **3D Modeling**: [Blender](https://projects.blender.org/blender/blender)
 
 ---
 
