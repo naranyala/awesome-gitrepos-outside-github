@@ -16,6 +16,7 @@
 - [Databases](#databases)
 - [Games](#games)
 - [Emulation & Virtualization](#emulation--virtualization)
+- [Ecosystems & Companion Tools](#ecosystems--companion-tools)
 - [Niche Linux Dotfiles Stacks](#niche-linux-dotfiles-stacks)
 
 ---
@@ -157,6 +158,48 @@
 *   [**QEMU**](https://gitlab.com/qemu-project/qemu) — A generic and open source machine emulator and virtualizer.
 *   [**Wine**](https://gitlab.winehq.org/wine/wine) — A compatibility layer capable of running Windows applications on Linux and other POSIX-compliant operating systems.
 
+## Ecosystems & Companion Tools
+
+*Tools, extensions, and core applications that complement the major projects listed above.*
+
+### Wayland & Sway (SourceHut)
+*   [**mako**](https://git.sr.ht/~emersion/mako) — A lightweight notification daemon for Wayland.
+*   [**grim**](https://git.sr.ht/~emersion/grim) — A tool to grab images from a Wayland compositor.
+*   [**slurp**](https://git.sr.ht/~emersion/slurp) — Select a region in a Wayland compositor (often used with grim).
+
+### Suckless Tools (git.suckless.org)
+*   [**dmenu**](https://git.suckless.org/dmenu/) — A fast and lightweight dynamic menu for X.
+*   [**slstatus**](https://git.suckless.org/slstatus/) — A status monitor for window managers that use WM_NAME (like dwm).
+*   [**surf**](https://git.suckless.org/surf/) — A simple web browser based on WebKit2/GTK+.
+
+### GNU Ecosystem (Savannah)
+*   [**Org-mode**](https://git.savannah.gnu.org/cgit/emacs/org-mode.git) — For keeping notes, maintaining TODO lists, planning projects, and authoring documents within Emacs.
+*   [**GNU Make**](https://git.savannah.gnu.org/cgit/make.git) — A tool which controls the generation of executables and other non-source files of a program.
+*   [**GNU Awk (gawk)**](https://git.savannah.gnu.org/cgit/gawk.git) — The GNU implementation of the AWK programming language.
+
+### Linux Userland & Networking Core (kernel.org / freedesktop)
+*   [**util-linux**](https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git) — Essential system utilities like `mount`, `fdisk`, and `dmesg`.
+*   [**iproute2**](https://git.kernel.org/pub/scm/network/iproute2/iproute2.git) — The standard networking utilities for Linux (like `ip`).
+*   [**D-Bus**](https://gitlab.freedesktop.org/dbus/dbus) — The standard message bus system for inter-process communication on Linux.
+*   [**NetworkManager**](https://gitlab.freedesktop.org/NetworkManager/NetworkManager) — The standard daemon for managing internet connections on Linux.
+
+### Terminal Email Syncing (SourceForge / cgit)
+*   [**isync (mbsync)**](https://git.code.sf.net/p/isync/isync) — A fast command line application which synchronizes mailboxes (IMAP/Maildir).
+*   [**msmtp**](https://git.marlam.de/msmtp.git) — A very simple and easy to use SMTP client with excellent sendmail compatibility.
+
+### Desktop Core Apps (GitLab instances)
+*   [**WirePlumber**](https://gitlab.freedesktop.org/pipewire/wireplumber) — A powerful session and policy manager for PipeWire.
+*   [**Dolphin**](https://invent.kde.org/system/dolphin) — KDE's lightweight and powerful file manager.
+*   [**Nautilus**](https://gitlab.gnome.org/GNOME/nautilus) — The core file manager for the GNOME desktop.
+*   [**Thunar**](https://gitlab.xfce.org/xfce/thunar) — A modern file manager for the Xfce Desktop Environment.
+*   [**Okular**](https://invent.kde.org/graphics/okular) — The universal document viewer developed by KDE.
+*   [**Evince**](https://gitlab.gnome.org/GNOME/evince) — A document viewer for multiple document formats for the GNOME desktop.
+*   [**Epiphany (GNOME Web)**](https://gitlab.gnome.org/GNOME/epiphany) — The web browser for the GNOME desktop.
+
+### Operating System Tooling
+*   [**apk-tools**](https://gitlab.alpinelinux.org/alpine/apk-tools) — The Alpine Package Keeper, Alpine Linux's package manager.
+*   [**FreeBSD Ports**](https://cgit.freebsd.org/ports/) — The FreeBSD ports and packages collection.
+
 ---
 
 ## Niche Linux Dotfiles Stacks
@@ -165,52 +208,93 @@ If you want to build a highly customized, niche Linux dotfiles setup using *only
 
 ### 1. The "Suckless" X11 Minimalist
 A setup focusing on absolute minimalism, compiling from source, and using C-based configuration.
+*   **OS Base**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports)
 *   **Window Manager**: [dwm](https://git.suckless.org/dwm/)
+*   **App Launcher**: [dmenu](https://git.suckless.org/dmenu/)
+*   **Status Bar**: [slstatus](https://git.suckless.org/slstatus/)
 *   **Terminal**: [st](https://git.suckless.org/st/)
 *   **Shell**: [GNU Bash](https://git.savannah.gnu.org/cgit/bash.git)
+*   **Web Browser**: [surf](https://git.suckless.org/surf/)
 *   **Editor**: [GNU Emacs](https://git.savannah.gnu.org/cgit/emacs.git) (or just `vi` from [BusyBox](https://git.busybox.net/busybox/))
 *   **Passwords**: [Pass](https://git.zx2c4.com/password-store/)
 
 ### 2. The Modern Wayland Indie Hacker
 A modern, keyboard-driven Wayland setup utilizing indie tools hosted primarily on SourceHut and self-hosted instances.
+*   **OS Base**: [GNU Guix](https://git.savannah.gnu.org/cgit/guix.git)
 *   **Compositor**: [Sway](https://gitlab.freedesktop.org/wlroots/wlroots)
-*   **Email Client**: [aerc](https://git.sr.ht/~rjarry/aerc)
+*   **Notifications**: [mako](https://git.sr.ht/~emersion/mako)
+*   **Screenshots**: [grim](https://git.sr.ht/~emersion/grim) + [slurp](https://git.sr.ht/~emersion/slurp)
+*   **Terminal**: [st](https://git.suckless.org/st/)
+*   **Shell**: [Zsh](https://git.code.sf.net/p/zsh/code)
+*   **Web Browser**: [Chromium](https://chromium.googlesource.com/chromium/src)
+*   **Email Stack**: [aerc](https://git.sr.ht/~rjarry/aerc) + [isync (mbsync)](https://git.code.sf.net/p/isync/isync) + [msmtp](https://git.marlam.de/msmtp.git)
 *   **IRC Client**: [catgirl](https://git.causal.agency/catgirl)
-*   **Browser**: [NetSurf](https://git.netsurf-browser.org/netsurf.git) (for extreme lightweight browsing)
-*   **Package Manager**: [GNU Guix](https://git.savannah.gnu.org/cgit/guix.git)
 
 ### 3. The Lightweight Traditional Desktop
 A more traditional, mouse-friendly setup that avoids heavy corporate telemetry and bloat.
 *   **OS Base**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports)
 *   **Desktop Environment**: [Xfce](https://gitlab.xfce.org/xfce)
-*   **Media**: [VLC](https://code.videolan.org/videolan/vlc) or [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) for audio routing
-*   **Privacy Browser**: [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser)
+*   **File Manager**: [Thunar](https://gitlab.xfce.org/xfce/thunar)
+*   **Network Manager**: [NetworkManager](https://gitlab.freedesktop.org/NetworkManager/NetworkManager)
+*   **Shell**: [GNU Bash](https://git.savannah.gnu.org/cgit/bash.git)
+*   **Web Browser**: [Tor Browser](https://gitlab.torproject.org/tpo/applications/tor-browser)
+*   **Text Editor**: [GNU Nano](https://git.savannah.gnu.org/cgit/nano.git)
+*   **Office Suite**: [LibreOffice](https://git.libreoffice.org/core)
+*   **Media**: [VLC](https://code.videolan.org/videolan/vlc)
 
 ### 4. The Free Software Absolutist
 A Libre-only stack endorsed by the Free Software Foundation. No proprietary blobs, telemetry, or non-free JS allowed.
 *   **Firmware**: [Libreboot](https://cgit.libreboot.org/libreboot.git)
 *   **Operating System**: [Trisquel](https://gitlab.trisquel.org/trisquel/package-helpers)
 *   **Desktop Environment**: [GNOME (GTK)](https://gitlab.gnome.org/GNOME/gtk)
-*   **Web Browser**: [GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git)
-*   **Text Editor**: [GNU Nano](https://git.savannah.gnu.org/cgit/nano.git)
+*   **File Manager**: [Nautilus](https://gitlab.gnome.org/GNOME/nautilus)
+*   **Shell**: [GNU Bash](https://git.savannah.gnu.org/cgit/bash.git)
+*   **Web Browser**: [GNU IceCat](https://git.savannah.gnu.org/cgit/gnuzilla.git) or [Epiphany](https://gitlab.gnome.org/GNOME/epiphany)
+*   **Document Viewer**: [Evince](https://gitlab.gnome.org/GNOME/evince)
+*   **Text Editor**: [GNU Emacs](https://git.savannah.gnu.org/cgit/emacs.git) + [Org-mode](https://git.savannah.gnu.org/cgit/emacs/org-mode.git)
+*   **Office Suite**: [LibreOffice](https://git.libreoffice.org/core)
 
 ### 5. The Hardened Server / Privacy Node
 A completely self-hosted, supervised environment built for resilience and security without systemd.
-*   **Base OS**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports) or [OpenBSD](https://cgit.openbsd.org/src/)
+*   **Base OS**: [OpenBSD](https://cgit.openbsd.org/src/)
 *   **Process Supervision**: [s6](https://git.skarnet.org/cgits/s6)
-*   **Web Server**: [Lighttpd](https://git.lighttpd.net/lighttpd/lighttpd.git)
-*   **VPN**: [WireGuard](https://git.zx2c4.com/wireguard-linux)
+*   **Core Utils**: [util-linux](https://git.kernel.org/pub/scm/utils/util-linux/util-linux.git)
 *   **Shell**: [Zsh](https://git.code.sf.net/p/zsh/code)
 *   **Terminal Multiplexer**: [GNU Screen](https://git.savannah.gnu.org/cgit/screen.git)
+*   **Web Server**: [Lighttpd](https://git.lighttpd.net/lighttpd/lighttpd.git)
+*   **VPN**: [WireGuard](https://git.zx2c4.com/wireguard-linux)
+*   **Anonymity**: [Tor](https://gitlab.torproject.org/tpo/core/tor)
 
 ### 6. The Open-Source Creative Studio
 A dotfiles setup tailored to digital artists, musicians, and video editors who rely on independent community infrastructure.
-*   **Desktop Environment**: [Enlightenment](https://git.enlightenment.org/enlightenment/enlightenment) or [KDE Plasma](https://invent.kde.org/plasma/plasma-workspace)
-*   **Audio Pipeline**: [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire)
+*   **OS Base**: [FreeBSD](https://cgit.freebsd.org/src/)
+*   **Desktop Environment**: [Enlightenment](https://git.enlightenment.org/enlightenment/enlightenment)
+*   **Web Browser**: [Chromium](https://chromium.googlesource.com/chromium/src)
+*   **Audio Pipeline**: [PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire) + [WirePlumber](https://gitlab.freedesktop.org/pipewire/wireplumber)
 *   **Digital Audio Workstation**: [Ardour](https://git.ardour.org/ardour/ardour.git)
 *   **Video Editing**: [Kdenlive](https://invent.kde.org/multimedia/kdenlive)
 *   **Graphics & Painting**: [Krita](https://invent.kde.org/graphics/krita) and [GIMP](https://gitlab.gnome.org/GNOME/gimp)
 *   **3D Modeling**: [Blender](https://projects.blender.org/blender/blender)
+
+### 7. The Console Warrior (TUI Only)
+A machine running without X11 or Wayland, entirely dependent on the framebuffer, GNU tools, and multiplexers.
+*   **OS Base**: [Alpine Linux](https://gitlab.alpinelinux.org/alpine/aports) or [Buildroot](https://git.buildroot.net/buildroot)
+*   **Shell**: [Zsh](https://git.code.sf.net/p/zsh/code)
+*   **Multiplexer**: [GNU Screen](https://git.savannah.gnu.org/cgit/screen.git)
+*   **Network Config**: [iproute2](https://git.kernel.org/pub/scm/network/iproute2/iproute2.git)
+*   **Mail Stack**: [Mutt](https://gitlab.com/muttmua/mutt) + [isync (mbsync)](https://git.code.sf.net/p/isync/isync) + [msmtp](https://git.marlam.de/msmtp.git)
+*   **Text Editor**: [GNU Nano](https://git.savannah.gnu.org/cgit/nano.git) or `vi`
+*   **Text Processing**: [GNU Awk (gawk)](https://git.savannah.gnu.org/cgit/gawk.git)
+
+### 8. The Complete KDE Plasma Workstation
+A fully-featured KDE experience built mostly from KDE's own GitLab instance.
+*   **OS Base**: [Gentoo](https://gitweb.gentoo.org/repo/gentoo.git/)
+*   **Desktop Environment**: [KDE Plasma](https://invent.kde.org/plasma/plasma-workspace)
+*   **File Manager**: [Dolphin](https://invent.kde.org/system/dolphin)
+*   **Document Viewer**: [Okular](https://invent.kde.org/graphics/okular)
+*   **Video Editor**: [Kdenlive](https://invent.kde.org/multimedia/kdenlive)
+*   **Graphics**: [Krita](https://invent.kde.org/graphics/krita)
+*   **Browser**: [Chromium](https://chromium.googlesource.com/chromium/src)
 
 ---
 
